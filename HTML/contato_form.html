@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato com nosco</title>
+</head>
+<body>
+    <h1>Formulário de contato</h1>
+    <form action="/processar" method="post">
+    <!-- usando Label e Select -->
+    <label for="carros">Escolha um carro</label>
+    <select name="carros" id="carros">
+        <option value="toyota">Toyota</option>
+        <option value="honfa">Honda</option>
+        <option value="mitsubushi">Mitsubishi</option>
+    </select>
+    <!-- Fim Label e Select -->
+    <!-- Inicio Label e TextArea -->
+    <br>
+    <label for="comentarios">Deixe seu comentários</label>
+    <br>
+    <textarea name="comentarios" id="comentarios" cols="50" rows="5"></textarea>
+    <br>
+    <!-- Fim Label e TextArea -->
+    <!-- Botão Enviar form -->
+    <br>
+    <input type="submit" value="Enviar">
+    <!-- Fim botão enviar -->
+</form>
+</body>
+</html>
