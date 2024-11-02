@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-/* CSS Store Rélogios */
-/* Início estilo header */
 
 body, ul{
     margin: 0;
     padding: 0;
 }
 #menu a {
-    color: black;
+    color: rgb(253, 253, 253);
     text-decoration: none;
     font-family: "Abel", sans-serif;
     font-weight: 400;
@@ -16,23 +14,13 @@ body, ul{
     text-align: center;
     padding: 0 0.4em;
     font-size: 24px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom: 2px solid #00d82fe3;
+    border-bottom: 2px solid #dcdfdde3;
     box-shadow: 1px 1px 2px #969696;
 }
 #menu a:hover{
     font-size: 22px; /*Arredonda  canto abaixo e esquerdo */
     border-bottom-right-radius: 15px; /* Arredoda canto abaixo a direita */
     border-bottom: 0.1px solid #000000;
-}
-#logo img {
-    height: 40px;
-}
-
-#logo img:hover{
-    box-shadow: 2px 2px 4px #1605fd;
-    transition:  0.3s;
 }
 
 #header{
@@ -41,8 +29,8 @@ body, ul{
     padding: 1rem;
     display: flex;
     align-items: center;
-     justify-content: space-between;/*mudar para altera op lado que fica n pagina  */
-    background: #e7e7e7;
+    justify-content: space-between;/*mudar para altera op lado que fica n pagina  */
+    background: #201f1f;
     box-shadow: 3px 3px 6px #b1b1b1;/* Sombra do Menu */
 }
 #menu {
@@ -52,4 +40,27 @@ body, ul{
 }
 #btn-mobile{
     display: none;
+}
+#pesquisa{
+ 
+    color: #33883a;
+    text-decoration: none;
+    font-family: sans-serif;
+    justify-content: flex-end;/*mudar para altera op lado que fica n pagina  */
+    background: #201f1f;
+    box-shadow: 3px 3px 6px #b1b1b1;/* Sombra do Menu */
+}
+
+
+
+/* coçocar altura e lagura nas imagem no html */
+body img{
+    
+    height: 600px;
+    width: 100%; 
+
+}
+
+body h1{
+    text-align: center;
 }

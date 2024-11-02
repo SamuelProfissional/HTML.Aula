@@ -1,0 +1,22 @@
+
+
+
+html, body{
+    height: 100%;
+    /* background-image: linear-gradient(45deg,cyan,yellow); FAZER DEGRADE - TESTE */
+    background-color: rgb(170, 170, 170);
+}
+
+.form-container{
+    max-width: 350px;
+    padding: 1rem;
+    background-color: rgba(154, 154, 240, 0.89);
+
+}
+.form-container img{
+    align-items: 100%;
+    height: 100%;
+    width: 200px; 
+     
+    
+}
