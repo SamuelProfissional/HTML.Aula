@@ -1,55 +1,199 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-/* CSS Store Rélogios */
+/* CSS France Perfum */
 /* Início estilo header */
 
-body, ul{
-    margin: 0;
-    padding: 0;
+body, ul {
+  margin: 0;
+  padding: 0;
 }
+/* 
+========================================
+COLOCAR O CARROUSEUL NO CENTRO
+========================================
+
+
+*/
+
+/* consegue modificar o tamanho de todas as imagens 
+body img{
+    height: 600px;
+    width: 100%; 
+} */
 #menu a {
-    color: black;
-    text-decoration: none;
-    font-family: "Abel", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    transition: 0.3s;
-    text-align: center;
-    padding: 0 0.4em;
-    font-size: 24px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom: 2px solid #00d82fe3;
-    box-shadow: 1px 1px 2px #969696;
+  color: black;
+  text-decoration: none;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: 0.3s;
+  text-align: center;
+  padding: 0 0.4em;
+  font-size: 24px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: 2px solid #24ee15;
+  box-shadow: 1px 1px 2px #969696;
+  background: #ffffff;
 }
-#menu a:hover{
-    font-size: 22px; /*Arredonda  canto abaixo e esquerdo */
-    border-bottom-right-radius: 15px; /* Arredoda canto abaixo a direita */
-    border-bottom: 0.1px solid #000000;
+#menu a:hover {
+  font-size: 22px;
+  border-bottom-left-radius: 15px; /* Arredondar canto abaixo e esquerdo */
+  border-bottom-right-radius: 15px; /* Arredondar canto abaixo e direito */
+  border-bottom: 0.1px solid #000000;
 }
 #logo img {
-    height: 40px;
+  height: 40px;
 }
 
-#logo img:hover{
-    box-shadow: 2px 2px 4px #1605fd;
-    transition:  0.3s;
+#logo img:hover {
+  box-shadow: 2px 2px 4px #cbcbcb;
+  transition: 0.3s;
 }
 
-#header{
-    box-sizing: border-box;
-    height: 60px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-     justify-content: space-between;/*mudar para altera op lado que fica n pagina  */
-    background: #e7e7e7;
-    box-shadow: 3px 3px 6px #b1b1b1;/* Sombra do Menu */
+#header {
+  box-sizing: border-box;
+  height: 80px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background: #e7e7e7;
+  box-shadow: 3px 3px 6px #b1b1b1; /* Sombra do Menu */
+  top: 0;
 }
+
 #menu {
-    display: flex;
-    list-style: none;/*Unidade de medida relativa que varia de acordo com a dimensão do navegador ou dispositivo, por padrão,irem é igual a 16px*/
-    gap: 0.8rem; /* gap define o espaçamento entre linhas e colunas de flex-box */
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 0.8rem; 
+  /* rem unidade de medida relativa que varia de acordo
+  com a dimensão do navegador ou dispositivo, por padrão, 1rem é igual
+  a 16px */
+  /* gap > define o espaçamento entre linhas e colunas de um flexbox*/
+  z-index: 1000;
+  /* justify-content: center; */
+}
+ul, dl, ol #menu{
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#btn-mobile {
+  display: none;
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#carouselExampleInterval {
+  width: 60%;
+  height: auto;
+  display: flex;
+  position: relative;
+  z-index: 100;
+  /* Garante que o carousel esteja acima de outros elementose 
+  utilizando um número menor #menu, ficará atrás do menu */
+  margin-top: 10px;
+}
+
+.carousel-item img {
+  height: 350px;
+  width: 50%;
+  
+  /* Alteração do tamanho das imagens */
+/* ============================== 
+  height: 600px;
+  width: 100%; 
+  ================================ */
+}
+
+@media (max-width: 600px){
+    #menu {
+        display: block;
+        position: absolute;
+        width: 15em;
+        top: 70px;
+        right: 0px;
+        background:#e7e7e7 ;
+        transition: 0.6s;
+        z-index: 500;
+        height: 0px;
+        padding-left: 5px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #menu li{
+        padding-top: 30px;
+        padding-bottom: 12px;
+        margin: 0px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+#nav.active #menu{
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: hidden;
 }
 #btn-mobile{
-    display: none;
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+#hamburger{
+    border-top: 2px solid;
+    /* melhora o hamburger  > Espessura da linha*/
+    width: 30px;
+    /* Altera a largura do mwnu hamburger */
+    color: #003f91;
+    /* Altera a cor do hamburger */
+}
+#hamburger::after,
+#hamburger::before{
+    content: '';
+    display: block;
+    width: 30px;
+    /* Altera a largura do icone hamburger */
+    height: 2px;
+    background: currentColor;
+    margin-top: 4px ;
+    /* Altera o espaçamento entre o hamburger */
+    position: relative;
+    border-top: 2px solid;
+    /* Melhora o hamburger > Espessura da linha */
+}
+#nav.active #hamburger{
+    border-top-color: transparent;
+}
+#nav.active #hamburger::before{
+    transform: rotate(135deg);
+}
+#nav.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+/* Efeito Pulse */
+.whatsapp .pulse{
+    animation: pulse 0.7s infinite;
+    margin: pulse;
+    display: 0 auto;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+
+}
+@webkit-keyframes pulse{
+    0%{
+        -webkit-transform:scale(1);
+        -webkit-
+    }
+}
+
 }
