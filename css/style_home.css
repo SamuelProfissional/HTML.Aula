@@ -405,7 +405,7 @@ ul, dl, ol #menu{
 }
 
 /* Efeito Pulse */
-.whatsapp .pulse {
+.Whatsapp .pulse {
   animation: pulse 0.7s infinite;
   margin: 0 auto;
   display: table;
